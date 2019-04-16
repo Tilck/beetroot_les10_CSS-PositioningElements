@@ -2,14 +2,73 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #0E0E0E;
+}
+
 .container {
-    display: inline-block;
+    margin: auto;
     text-align: center;
-    position: relative;
-    width: 400px;
-    height: 500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 404px;
+    height: 404px;
     color: #fff;
     font-size: 0;
+}
+
+ul {
+    background-color: #AA5500;
+    color: #FECD72;
+    font-size: 0;
+    padding: 0;
+    position: absolute;
+}
+
+ul li {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.number-top li, .number-bottom li { display: inline-block; width: 50px; height: 20px;}
+
+.number-top {
+    top: -20px;
+}
+
+.number-bottom {
+    bottom: -20px;
+}
+
+.number-top, .number-bottom {
+    border:2px solid #AA5500;
+    border-top: none;
+    border-bottom: none;
+}
+
+.letter-left li, .letter-right li{
+    display: list-item;
+    height: 50px;
+    width: 20px;
+    line-height: 50px;
+}
+
+.letter-left, .letter-right {
+    border:2px solid #AA5500;
+    border-left: none;
+    border-right: none;
+}
+
+.letter-left {left: -20px}
+
+.letter-right {right: -20px}
+
+.checkers {
+    padding: 1px;
+    border: 1px solid #FECD72;
 }
 
 .square {
